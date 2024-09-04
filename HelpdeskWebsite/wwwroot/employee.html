@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/lib/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/lib/css/employee.css" rel="stylesheet" />
+    <title>Home</title>
+</head>
+<body style="background-image:url('/img/img3.webp');background-size:cover;height:100vh;">
+    <nav class="navbar navbar-expand-md navbar-light bg-primary">
+        <a class="navbar-brand mx-3 text-white fw-bold" href="/home.html">Helpdesk</a>
+        <button class="navbar-toggler mx-3 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-3">
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white active" href="/employee.html">Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="/call.html">Call</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="/report.html">Report</a>
+                </li>
+            </ul>
+            <form style="width: 100%;text-align: -webkit-right;">
+                <input class="form-control" type="search" placeholder="Search by Last Name" id="srch" aria-label="Search"
+                       style="width:25vw;">
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <img src="img\img1.png" class="img-fluid" style="width: 25%;">
+                <h1 class="text-white" style="text-shadow:2px 2px 2px blue">Help Desk</h1>
+                <h2 class="text-white" style="text-shadow:2px 2px 2px blue">V 1.0</h2>
+
+                <div class="justify-content-center align-items-center row mt-5 ml-1">
+                    <div class="list-group col-10" id="employeeList" style="padding-bottom:100px;">
+                    </div>
+                    <form id="EmployeeModalForm" name="EmployeeModalForm" method="post" action="">
+                        <div class="modal fade" id="theModal" data-bs-backdrop="static"
+                             data-bs-keyboard="false" tabindex="-1" aria-labelledby="theModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-primary">
+                                        <h2 class="modal-title text-white" id="modaltitle">Update Employee</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body bg-info">
+                                        <div class="mx-2 my-2">
+                                            <div class="card">
+                                                <div class="card-header text-center bg-primary text-white">Employee Information</div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-4 text-primary">Title:</div>
+                                                        <div class="col-8">
+                                                            <input type="text"
+                                                                   placeholder="enter name"
+                                                                   id="TextBoxTitle"
+                                                                   name="TextBoxTitle"
+                                                                   class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-4 text-primary">First:</div>
+                                                        <div class="col-8">
+                                                            <input type="text"
+                                                                   placeholder="enter name"
+                                                                   id="TextBoxName"
+                                                                   name="TextBoxName"
+                                                                   class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-4 text-primary">Surname:</div>
+                                                        <div class="col-8">
+                                                            <input type="text"
+                                                                   placeholder="enter name"
+                                                                   id="TextBoxLastname"
+                                                                   name="TextBoxLastname"
+                                                                   class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-4 text-primary">Email:</div>
+                                                        <div class="col-8">
+                                                            <input type="text"
+                                                                   placeholder="enter name"
+                                                                   id="TextBoxEmail"
+                                                                   name="TextBoxEmail"
+                                                                   class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-4 text-primary">Phone Number:</div>
+                                                        <div class="col-8">
+                                                            <input type="text"
+                                                                   placeholder="enter phone number"
+                                                                   id="TextBoxPhone"
+                                                                   name="TextBoxPhone"
+                                                                   class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-3">
+                                                        <div class="col-4 text-primary">Picture:</div>
+                                                        <div class="col-8" id="imageHolder"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row m-2 mb-2">
+                                                <label for="file" class="text-primary">Choose Different Picture?</label>
+                                                <input type="file" id="uploader" class="text-center bg-primary btn btn-outline-light" />
+                                                <div id="uploadstatus" class="text-left"></div>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <input type="button" value="Update" id="actionbutton" class="m-3 bg-primary text-white" />
+                                                <input type="button" value="Delete" id="deletebutton" data-bs-dismiss="modal" class="m-3 bg-primary text-white" />
+                                                <div id="status" class="text-left mt-3 mb-2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-center bg-info">
+
+                                        <div id="status" class="text-left mt-3 mb-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="fixed-bottom opacity-75 bg-primary">
+        <p class="text-light fw-bolder">Yigit Yildiz - INFO3070</p>
+    </footer>
+    <script src="/lib/js/jquery.min.js"></script>
+    <script src="/lib/js/jquery.validate.min.js"></script>
+    <script src="/lib/js/bootstrap.min.js"></script>
+    <script src="/lib/js/employee.js"></script>
+</body>
+</html>

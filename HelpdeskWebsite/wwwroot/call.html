@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/lib/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/lib/css/call.css" rel="stylesheet" />
+    <title>Home</title>
+</head>
+<body style="background-image:url('/img/img4.png');background-size:cover;height:100vh;">
+    <nav>
+        <nav class="navbar navbar-expand-md navbar-light bg-primary">
+            <a class="navbar-brand mx-3 text-white fw-bold" href="/home.html">Helpdesk</a>
+            <button class="navbar-toggler mx-3 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="/employee.html">Employee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="/call.html">Call</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="/report.html">Report</a>
+                    </li>
+                </ul>
+                <form style="width: 100%;text-align: -webkit-right;">
+                    <input class="form-control" type="search" placeholder="Search by Employee Name" id="srch" aria-label="Search"
+                           style="width:25vw;">
+                </form>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <img src="img\img1.png" class="img-fluid" style="width: 25%;">
+                    <h1 class="text-white" style="text-shadow:2px 2px 2px blue">Help Desk</h1>
+                    <h2 class="text-white" style="text-shadow:2px 2px 2px blue">V 1.0</h2>
+                </div>
+            </div>
+        </div>
+        <div class="justify-content-center align-items-center row mt-5 ml-1">
+            <div class="list-group col-10" id="callList" style="height:45vh; padding-bottom:100px;">
+            </div>
+        </div>
+    </nav>
+    <form id="CallModalForm" name="EmployeeModalForm" method="post" action="">
+        <div class="modal fade" id="theModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="theModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary">
+                        <h2 class="modal-title text-white" id="modaltitle">Update Call</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-info">
+                        <div class="mx-2 my-2">
+                            <div class="card">
+                                <div class="card-header text-center bg-primary text-white">Call Information</div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-4 text-primary">Problem:</div>
+                                        <div class="col-8">
+                                            <select id="SelectedProblem" name="SelectedProblem" class="form-control">
+                                            </select>
+                                            <!--<input type="text"
+                                            placeholder="enter problem"
+                                            id="TextBoxProblem"
+                                            class="form-control" />-->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4 text-primary">Employee:</div>
+                                        <div class="col-8">
+                                            <select id="SelectedEmployee" name="SelectedEmployee" class="form-control">
+                                            </select>
+                                            <!--<input type="text"
+                                            placeholder="enter employee name"
+                                            id="TextBoxEmployee"
+                                            class="form-control" />-->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4 text-primary">Technician:</div>
+                                        <div class="col-8">
+                                            <select id="SelectedTech" name="SelectedTech" class="form-control">
+                                            </select>
+                                            <!--<input type="text"
+                                            placeholder="enter technician name"
+                                            id="TextBoxTech"
+                                            class="form-control" />-->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4 text-primary">Date Opened:</div>
+                                        <div class="col-8">
+                                            <input type="text"
+                                                   placeholder=""
+                                                   id="TextBoxDateOpened"
+                                                   class="form-control"
+                                                   disabled="disabled" />
+                                        </div>
+                                    </div>
+                                    <div class="row" id="dateClosedRow" style="display:none;">
+                                        <div class="col-4 text-primary">Date Closed:</div>
+                                        <div class="col-8">
+                                            <input type="text"
+                                                   placeholder=""
+                                                   id="TextBoxDateClosed"
+                                                   class="form-control"
+                                                   disabled="disabled" />
+                                        </div>
+                                    </div>
+                                    <div class="row" id="CloseCallRow">
+                                        <div class="col-4 text-primary">Close Call:</div>
+                                        <div class="col-8">
+                                            <input type="checkbox"
+                                                   placeholder=""
+                                                   id="TextBoxCloseCall"
+                                                   class="form-check-input" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4 text-primary">Notes:</div>
+                                        <div class="col-8">
+                                            <textarea placeholder="enter notes"
+                                                      rows="3"
+                                                      id="TextBoxNotes"
+                                                      name="TextBoxNotes"
+                                                      class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-center">
+                                <input type="button" value="Update" id="actionbutton" class="m-3 bg-primary text-white" />
+                                <input type="button" value="Delete" id="deletebutton" data-bs-dismiss="modal" class="m-3 bg-primary text-white" />
+                                <!--<div id="status" class="text-left mt-3 mb-2"></div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Do Something in Modal</button>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </form>
+    <footer class="fixed-bottom opacity-75 bg-primary">
+        <p class="text-light fw-bolder">Yigit Yildiz - INFO3070</p>
+    </footer>
+    <script src="/lib/js/jquery.min.js"></script>
+    <script src="/lib/js/jquery.validate.min.js"></script>
+    <script src="/lib/js/bootstrap.min.js"></script>
+    <script src="/lib/js/call.js"></script>
+</body>
+</html>

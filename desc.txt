@@ -1,0 +1,7 @@
+This project is a .NET-based client-server application designed to 
+manage a helpdesk system. It enables users to manage support calls, 
+track employee activities, and generate reports on calls and employee
+ performance. The application follows the MVC (Model-View-Controller)
+ pattern, providing a structured web interface where users can log 
+ and monitor support requests, assign tasks to employees, and analyze
+ data through generated reports.

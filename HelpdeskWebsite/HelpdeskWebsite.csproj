@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\lib\js\employee.js" />
+    <Content Remove="wwwroot\lib\Reports\CallReport.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\lib\css\employee.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\js\employee.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="wwwroot\lib\Reports\CallReport.cs" />
+    <Compile Include="wwwroot\lib\Reports\EmployeeReport.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\js\employee.js" />
+    <None Include="wwwroot\lib\js\jquery.min.js" />
+    <None Include="wwwroot\lib\js\jquery.validate.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="itext7" Version="7.2.5" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.11" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HelpdeskDAL\HelpdeskDAL.csproj" />
+    <ProjectReference Include="..\HelpdeskViewModels\HelpdeskViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\pdfs\" />
+  </ItemGroup>
+
+
+</Project>

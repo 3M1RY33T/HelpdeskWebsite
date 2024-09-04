@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/lib/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/lib/css/styles.css" rel="stylesheet" />
+    <title>Home</title>
+</head>
+<body style="background-image:url('/img/img5.jpg');background-size:cover;height:100vh;">
+    <body>
+        <nav>
+            <nav class="navbar navbar-expand-md navbar-light bg-primary">
+                <a class="navbar-brand mx-3 text-white fw-bold" href="home.html">Helpdesk</a>
+                <button class="navbar-toggler mx-3 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mx-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="/home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="\employee.html">Employee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="/call.html">Call</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" href="/report.html">Report</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <img src="img\img1.png" class="img-fluid">
+                        <h1 class="text-white" style="text-shadow:2px 2px 2px blue">Help Desk</h1>
+                        <h2 class="text-white" style="text-shadow:2px 2px 2px blue">V 1.0</h2>
+                        <input class="col-5 btn btn-primary" type="button" value="Employees Report" id="pdfbutton" />
+                        <input class="col-5 btn btn-primary" type="button" value="Calls Report" id="callsPdfbutton" />
+                        <p id="lblstatus"></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal fade" id="theModal" data-bs-backdrop="static"
+                 data-bs-keyboard="false" tabindex="-1" aria-labelledby="theModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="theModalLabel">Employee Lookup</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mx-2 my-2">
+                                <div class="card">
+                                    <div class="card-header text-center">
+                                        Employee Information
+                                    </div>
+                                    <div class="card-body p-0 ml-1">
+                                        <div class="row" style="width:50%; float: left;">
+                                            <div class="col-122 text-right" style="font-weight:bold; width: 50%;">Title: </div>
+                                            <div class="col-222 text-left" style="width: 50%;" id="title"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-3 text-right" style="font-weight: bold; width: 50%;">First: </div>
+                                            <div class="col-4 text-left" style="width: 50%; float: left;" id="firstname"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-344 text-right" style="font-weight: bold; width: 24%;">Last: </div>
+                                            <div class="col-433 text-left" style="width: 50%; float: left;" id="lastname"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-333 text-right" style="font-weight: bold; width: 24%;">Phone: </div>
+                                            <div class="col-444 text-left" style="width: 50%; float: left;" id="phone"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-3" style="font-weight:bold">Email:</div>
+                                            <div class="col-8">
+                                                <input type="text" placeholder="enter email" id="TextBoxEmail" class="form-control my-2" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <input type="button" value="Find Employee" id="getbutton" />
+                                        <div id="status" class="text-left mt-3 mb-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <footer class="fixed-bottom opacity-75 bg-primary">
+            <p class="text-light fw-bolder">Yigit Yildiz - INFO3070</p>
+        </footer>
+        <script src="lib/js/jquery.min.js"></script>
+        <script src="lib/js/jquery.validate.min.js"></script>
+        <script src="lib/js/bootstrap.min.js"></script>
+        <script src="lib/js/report.js"></script>
+    </body>
+</html>

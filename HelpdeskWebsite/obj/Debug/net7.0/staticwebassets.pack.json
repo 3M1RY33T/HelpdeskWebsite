@@ -1,0 +1,109 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\call.html",
+      "PackagePath": "staticwebassets\\call.html"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\employee.html",
+      "PackagePath": "staticwebassets\\employee.html"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\home.html",
+      "PackagePath": "staticwebassets\\home.html"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\img\\img1.png",
+      "PackagePath": "staticwebassets\\img\\img1.png"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\img\\img2.jpg",
+      "PackagePath": "staticwebassets\\img\\img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\img\\img3.webp",
+      "PackagePath": "staticwebassets\\img\\img3.webp"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\img\\img4.png",
+      "PackagePath": "staticwebassets\\img\\img4.png"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\img\\img5.jpg",
+      "PackagePath": "staticwebassets\\img\\img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\lib\\Reports\\EmployeeReport.cs",
+      "PackagePath": "staticwebassets\\lib\\Reports\\EmployeeReport.cs"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\lib\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\lib\\css\\call.css",
+      "PackagePath": "staticwebassets\\lib\\css\\call.css"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\lib\\css\\employee.css",
+      "PackagePath": "staticwebassets\\lib\\css\\employee.css"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\lib\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\lib\\js\\call.js",
+      "PackagePath": "staticwebassets\\lib\\js\\call.js"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\lib\\js\\dynamichtml.js",
+      "PackagePath": "staticwebassets\\lib\\js\\dynamichtml.js"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\lib\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\lib\\js\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\js\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\lib\\js\\report.js",
+      "PackagePath": "staticwebassets\\lib\\js\\report.js"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\lib\\js\\validationexample.js",
+      "PackagePath": "staticwebassets\\lib\\js\\validationexample.js"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\pdfs\\callreport.pdf",
+      "PackagePath": "staticwebassets\\pdfs\\callreport.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\pdfs\\employeereport.pdf",
+      "PackagePath": "staticwebassets\\pdfs\\employeereport.pdf"
+    },
+    {
+      "Id": "C:\\Users\\yigit\\OneDrive\\Masaüstü\\Projects\\Client-Server Application Project (Fall 2023, .NET)\\HelpdeskWebsite\\wwwroot\\report.html",
+      "PackagePath": "staticwebassets\\report.html"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.HelpdeskWebsite.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.HelpdeskWebsite.props",
+      "PackagePath": "build\\HelpdeskWebsite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.HelpdeskWebsite.props",
+      "PackagePath": "buildMultiTargeting\\HelpdeskWebsite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.HelpdeskWebsite.props",
+      "PackagePath": "buildTransitive\\HelpdeskWebsite.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
